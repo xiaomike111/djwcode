@@ -1,0 +1,26 @@
+/* pages/wx2weima/wx2weima.wxss */
+.fview{
+  width: 100%;
+  height: 100vh;
+  background-color: #ccffcc;
+}
+.topview{
+  width: 100%;
+  height: 30%;
+  border-bottom: 5px  solid  black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  font-weight: bold;
+}
+.tu{
+   width: 30%;
+  height: 30%;
+
+}
+.tuu{
+    width: 100%;
+  height: 100%;
+
+}

@@ -1,0 +1,51 @@
+<!--pages/daohang/daohang.wxml-->
+<view class='baseview'>
+     <view class='topview'>
+          <icon   type='search' size='15' color='purple'>
+          </icon>
+               <input class='inputview' placeholder='查'   bindconfirm='searchnumber'></input>
+               <view class='contentview'>
+                  <view class='{{phone?"phoneshow":"phonehide"}}'>
+                     <view class='phoneview'>
+                        <view>{{phonedata.mobile}}</view>
+                        <view>{{phonedata.phoneArea}}</view>
+                     </view>
+                  
+                  </view>
+                  <view class="{{snum?'snumbhow':'snumhide'}}">
+                      <view class="phoneview">
+                          <view>{{numdata.area    }}</view>
+                          <view>{{numdata.birthday}}</view>
+                          <view>{{numdata.cnEra   }}</view>
+                          <view>{{numdata.constellation}}</view>
+                          <view>{{numdata.sex     }}</view>
+                          <view>{{numdata.zodiac  }}</view>
+                      </view>
+                  
+                  </view>
+               
+               </view>
+             
+     </view>
+     <view class="bodyview">
+         <swiper class="sview" indicator-dots="true" autplay="true" circule="true"          duration='3000' interval='2000'>
+             <block wx:for="{{swiperdatas}}">
+                <navigator url='{{item.url}}'>
+                    <swiper-item>
+                       <view class='item.view'>
+                          <image src='{{item.image}}' class='cimg'></image>
+                          
+                       </view>
+                    
+                    </swiper-item>
+                
+                </navigator>
+           
+             </block>
+           
+         </swiper>
+     </view>
+<view class='bootview'>
+       <button  bindtap='searchinfo' class='anniu'>666</button>
+</view>
+</view>

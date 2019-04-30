@@ -1,0 +1,10 @@
+<!--pages/wx2weima/wx2weima.wxml-->
+<view class="fview">
+
+  <view  class="topview">点击下方图片扫描条形码[商品的价格]</view>
+
+  <view class='tu'>
+       <image  bindtap='clickScan' src='../i/music.png' class='tuu'></image>
+  </view>
+</view>
+
